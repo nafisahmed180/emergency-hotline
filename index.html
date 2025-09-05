@@ -35,15 +35,15 @@
         </section>
         <section class="nav-right flex items-center">
           <div
-            class="heart-count flex w-[123px] h-[52px] bg-[#41FF6B]/10 rounded-3xl mr-4 justify-center items-center gap-2"
+            class="flex w-[123px] h-[52px] bg-[#41FF6B]/10 rounded-3xl mr-4 justify-center items-center gap-2"
           >
-            <span class="font-bold">0</span>
+            <span id="heart-count" class="font-bold">0</span>
             <img src="./assets/heart.png" class="w-7 h-7" alt="" />
           </div>
           <div
-            class="coin-count flex w-[123px] h-[52px] bg-[#41FF6B]/10 rounded-3xl mr-4 justify-center items-center gap-2"
+            class="flex w-[123px] h-[52px] bg-[#41FF6B]/10 rounded-3xl mr-4 justify-center items-center gap-2"
           >
-            <span class="font-bold">100</span>
+            <span class="coin-count font-bold">100</span>
             <img src="./assets/coin.png" class="w-6 h-6" alt="" />
           </div>
           <button
@@ -87,14 +87,20 @@
               >
                 <img src="./assets/emergency.png" class="w-8 h-8" alt="" />
               </div>
-              <img src="./assets/heart2.png" class="w-7 h-7 mt-3" alt="" />
+              <img
+                src="./assets/heart2.png"
+                class="heart-btn w-7 h-7 mt-3"
+                alt=""
+              />
             </div>
             <div>
               <h1 class="font-bold text-2xl mt-3">National Emergency Number</h1>
-              <p class="text-[20px] text-gray-500">National Emergency</p>
+              <p class="data-service text-[20px] text-gray-500">
+                National Emergency
+              </p>
             </div>
             <div class="grid grid-cols-1 mt-5 gap-2">
-              <span class="font-bold text-4xl">999</span>
+              <span class="data-number font-bold text-4xl">999</span>
               <span
                 class="w-11 h-8 bg-gray-200 rounded-full flex justify-center items-center"
                 >All</span
@@ -106,7 +112,11 @@
               >
                 <span><img src="./assets/copy.png" alt="" /></span>Copy
               </button>
-              <button class="btn btn-sm w-[182px] h-10 bg-[#00A63E] rounded-lg">
+              <button
+                class="call-btn btn btn-sm w-[182px] h-10 bg-[#00A63E] rounded-lg"
+                data-service="National Emergency"
+                data-number="999"
+              >
                 <span
                   ><img
                     src="./assets/call.png"
@@ -126,14 +136,18 @@
               >
                 <img src="./assets/police.png" class="w-8 h-8" alt="" />
               </div>
-              <img src="./assets/heart2.png" class="w-7 h-7 mt-3" alt="" />
+              <img
+                src="./assets/heart2.png"
+                class="heart-btn w-7 h-7 mt-3"
+                alt=""
+              />
             </div>
             <div>
               <h1 class="font-bold text-2xl mt-3">Police Helpline Number</h1>
-              <p class="text-[20px] text-gray-500">Police</p>
+              <p class="data-service text-[20px] text-gray-500">Police</p>
             </div>
             <div class="grid grid-cols-1 mt-5 gap-2">
-              <span class="font-bold text-4xl">999</span>
+              <span class="data-number font-bold text-4xl">999</span>
               <span
                 class="w-16 h-8 bg-gray-200 rounded-full flex justify-center items-center"
                 >Police</span
@@ -145,7 +159,11 @@
               >
                 <span><img src="./assets/copy.png" alt="" /></span>Copy
               </button>
-              <button class="btn btn-sm w-[182px] h-10 bg-[#00A63E] rounded-lg">
+              <button
+                class="call-btn btn btn-sm w-[182px] h-10 bg-[#00A63E] rounded-lg"
+                data-service="Police"
+                data-number="999"
+              >
                 <span
                   ><img
                     src="./assets/call.png"
@@ -165,14 +183,18 @@
               >
                 <img src="./assets/fire-service.png" class="w-8 h-8" alt="" />
               </div>
-              <img src="./assets/heart2.png" class="w-7 h-7 mt-3" alt="" />
+              <img
+                src="./assets/heart2.png"
+                class="heart-btn w-7 h-7 mt-3"
+                alt=""
+              />
             </div>
             <div>
               <h1 class="font-bold text-2xl mt-3">Fire Service Number</h1>
-              <p class="text-[20px] text-gray-500">Fire Service</p>
+              <p class="data-service text-[20px] text-gray-500">Fire Service</p>
             </div>
             <div class="grid grid-cols-1 mt-5 gap-2">
-              <span class="font-bold text-4xl">999</span>
+              <span class="data-number font-bold text-4xl">999</span>
               <span
                 class="w-11 h-8 bg-gray-200 rounded-full flex justify-center items-center"
                 >Fire</span
@@ -184,7 +206,11 @@
               >
                 <span><img src="./assets/copy.png" alt="" /></span>Copy
               </button>
-              <button class="btn btn-sm w-[182px] h-10 bg-[#00A63E] rounded-lg">
+              <button
+                class="call-btn btn btn-sm w-[182px] h-10 bg-[#00A63E] rounded-lg"
+                data-service="Fire Service"
+                data-number="999"
+              >
                 <span
                   ><img
                     src="./assets/call.png"
@@ -204,14 +230,18 @@
               >
                 <img src="./assets/ambulance.png" class="w-8 h-8" alt="" />
               </div>
-              <img src="./assets/heart2.png" class="w-7 h-7 mt-3" alt="" />
+              <img
+                src="./assets/heart2.png"
+                class="heart-btn w-7 h-7 mt-3"
+                alt=""
+              />
             </div>
             <div>
               <h1 class="font-bold text-2xl mt-3">Ambulance Service</h1>
-              <p class="text-[20px] text-gray-500">Ambulance</p>
+              <p class="data-service text-[20px] text-gray-500">Ambulance</p>
             </div>
             <div class="grid grid-cols-1 mt-5 gap-2">
-              <span class="font-bold text-4xl">999</span>
+              <span class="data-number font-bold text-4xl">999</span>
               <span
                 class="w-16 h-8 bg-gray-200 rounded-full flex justify-center items-center"
                 >Health</span
@@ -223,7 +253,11 @@
               >
                 <span><img src="./assets/copy.png" alt="" /></span>Copy
               </button>
-              <button class="btn btn-sm w-[182px] h-10 bg-[#00A63E] rounded-lg">
+              <button
+                class="call-btn btn btn-sm w-[182px] h-10 bg-[#00A63E] rounded-lg"
+                data-service="Ambulance"
+                data-number="999"
+              >
                 <span
                   ><img
                     src="./assets/call.png"
@@ -243,14 +277,20 @@
               >
                 <img src="./assets/maternity.png" class="w-8 h-8" alt="" />
               </div>
-              <img src="./assets/heart2.png" class="w-7 h-7 mt-3" alt="" />
+              <img
+                src="./assets/heart2.png"
+                class="heart-btn w-7 h-7 mt-3"
+                alt=""
+              />
             </div>
             <div>
               <h1 class="font-bold text-2xl mt-3">Women & Child Helpline</h1>
-              <p class="text-[20px] text-gray-500">Women & Child Helpline</p>
+              <p class="data-service text-[20px] text-gray-500">
+                Women & Child Helpline
+              </p>
             </div>
             <div class="grid grid-cols-1 mt-5 gap-2">
-              <span class="font-bold text-4xl">999</span>
+              <span class="data-number font-bold text-4xl">999</span>
               <span
                 class="w-14 h-8 bg-gray-200 rounded-full flex justify-center items-center"
                 >Help</span
@@ -262,7 +302,11 @@
               >
                 <span><img src="./assets/copy.png" alt="" /></span>Copy
               </button>
-              <button class="btn btn-sm w-[182px] h-10 bg-[#00A63E] rounded-lg">
+              <button
+                class="call-btn btn btn-sm w-[182px] h-10 bg-[#00A63E] rounded-lg"
+                data-service="Women & Child Helpline"
+                data-number="999"
+              >
                 <span
                   ><img
                     src="./assets/call.png"
@@ -282,14 +326,20 @@
               >
                 <img src="./assets/user-shield.png" class="w-8 h-8" alt="" />
               </div>
-              <img src="./assets/heart2.png" class="w-7 h-7 mt-3" alt="" />
+              <img
+                src="./assets/heart2.png"
+                class="heart-btn w-7 h-7 mt-3"
+                alt=""
+              />
             </div>
             <div>
               <h1 class="font-bold text-2xl mt-3">Anti-Corruption Helpline</h1>
-              <p class="text-[20px] text-gray-500">Anti-Corruption</p>
+              <p class="data-service text-[20px] text-gray-500">
+                Anti-Corruption
+              </p>
             </div>
             <div class="grid grid-cols-1 mt-5 gap-2">
-              <span class="font-bold text-4xl">999</span>
+              <span class="data-number font-bold text-4xl">999</span>
               <span
                 class="w-11 h-8 bg-gray-200 rounded-full flex justify-center items-center"
                 >Govt</span
@@ -301,7 +351,11 @@
               >
                 <span><img src="./assets/copy.png" alt="" /></span>Copy
               </button>
-              <button class="btn btn-sm w-[182px] h-10 bg-[#00A63E] rounded-lg">
+              <button
+                class="call-btn btn btn-sm w-[182px] h-10 bg-[#00A63E] rounded-lg"
+                data-service="Anti-Corruption"
+                data-number="999"
+              >
                 <span
                   ><img
                     src="./assets/call.png"
@@ -325,14 +379,20 @@
                   alt=""
                 />
               </div>
-              <img src="./assets/heart2.png" class="w-7 h-7 mt-3" alt="" />
+              <img
+                src="./assets/heart2.png"
+                class="heart-btn w-7 h-7 mt-3"
+                alt=""
+              />
             </div>
             <div>
               <h1 class="font-bold text-2xl mt-3">Electricity Helpline</h1>
-              <p class="text-[20px] text-gray-500">Electricity Outage</p>
+              <p class="data-service text-[20px] text-gray-500">
+                Electricity Outage
+              </p>
             </div>
             <div class="grid grid-cols-1 mt-5 gap-2">
-              <span class="font-bold text-4xl">999</span>
+              <span class="data-number font-bold text-4xl">999</span>
               <span
                 class="w-20 h-8 bg-gray-200 rounded-full flex justify-center items-center"
                 >Electricity</span
@@ -344,7 +404,11 @@
               >
                 <span><img src="./assets/copy.png" alt="" /></span>Copy
               </button>
-              <button class="btn btn-sm w-[182px] h-10 bg-[#00A63E] rounded-lg">
+              <button
+                class="call-btn btn btn-sm w-[182px] h-10 bg-[#00A63E] rounded-lg"
+                data-service="Electricity Helpline"
+                data-number="999"
+              >
                 <span
                   ><img
                     src="./assets/call.png"
@@ -364,14 +428,18 @@
               >
                 <img src="./assets/brac.png" class="w-8 h-8" alt="" />
               </div>
-              <img src="./assets/heart2.png" class="w-7 h-7 mt-3" alt="" />
+              <img
+                src="./assets/heart2.png"
+                class="heart-btn w-7 h-7 mt-3"
+                alt=""
+              />
             </div>
             <div>
               <h1 class="font-bold text-2xl mt-3">Brac Helpline</h1>
-              <p class="text-[20px] text-gray-500">Brac</p>
+              <p class="data-service text-[20px] text-gray-500">Brac</p>
             </div>
             <div class="grid grid-cols-1 mt-5 gap-2">
-              <span class="font-bold text-4xl">999</span>
+              <span class="data-number font-bold text-4xl">999</span>
               <span
                 class="w-11 h-8 bg-gray-200 rounded-full flex justify-center items-center"
                 >NGO</span
@@ -383,7 +451,11 @@
               >
                 <span><img src="./assets/copy.png" alt="" /></span>Copy
               </button>
-              <button class="btn btn-sm w-[182px] h-10 bg-[#00A63E] rounded-lg">
+              <button
+                class="call-btn btn btn-sm w-[182px] h-10 bg-[#00A63E] rounded-lg"
+                data-service="Brac Helpline"
+                data-number="999"
+              >
                 <span
                   ><img
                     src="./assets/call.png"
@@ -407,16 +479,22 @@
                   alt=""
                 />
               </div>
-              <img src="./assets/heart2.png" class="w-7 h-7 mt-3" alt="" />
+              <img
+                src="./assets/heart2.png"
+                class="heart-btn w-7 h-7 mt-3"
+                alt=""
+              />
             </div>
             <div>
               <h1 class="font-bold text-2xl mt-3">
                 Bangladesh Railway Helpline
               </h1>
-              <p class="text-[20px] text-gray-500">Bangladesh Railway</p>
+              <p class="data-service text-[20px] text-gray-500">
+                Bangladesh Railway
+              </p>
             </div>
             <div class="grid grid-cols-1 mt-5 gap-2">
-              <span class="font-bold text-4xl">999</span>
+              <span class="data-number font-bold text-4xl">999</span>
               <span
                 class="w-11 h-8 bg-gray-200 rounded-full flex justify-center items-center"
                 >Travel</span
@@ -428,7 +506,11 @@
               >
                 <span><img src="./assets/copy.png" alt="" /></span>Copy
               </button>
-              <button class="btn btn-sm w-[182px] h-10 bg-[#00A63E] rounded-lg">
+              <button
+                class="call-btn btn btn-sm w-[182px] h-10 bg-[#00A63E] rounded-lg"
+                data-service="Brac Helpline"
+                data-number="999"
+              >
                 <span
                   ><img
                     src="./assets/call.png"
@@ -440,71 +522,30 @@
           </section>
         </section>
 
-        <section
-          class="call_history w-[400px] h-[1140px] bg-white rounded-xl shadow-lg"
-        >
-          <section>
+        <section class="w-[400px] h-[1140px] bg-white rounded-xl shadow-lg">
+          <section class="call-history-list">
             <div
               class="w-full h-[60px] rounded-t-xl flex justify-between items-center p-8 mt-5"
             >
-            <div class=" flex items-center gap-2">
-              <img src="./assets/clock.gif" class="w-6 h-6" alt="">
-              <h1 class="text-black font-bold text-2xl">Call History</h1>
-            </div>
-
-            <button class="btn btn-sm w-[114px] h-[52px] bg-[#00A63E] rounded-3xl">
-                <span
-                  ></span
-                ><span class="font-semibold text-white text-xl">Clear</span></button>
-            </div>
-            <div class="p-4">
-              <div
-                class="single-call flex justify-between items-center border-b-2 border-gray-200 py-4"
-              >
-                <div class="call-info flex items-center gap-4">
-                  <div
-                    class="w-[50px] h-[50px] bg-[#FFE3E2] rounded-xl flex justify-center items-center"
-                  >
-                    <img src="./assets/emergency.png" class="w-6 h-6" alt="" />
-                  </div>
-                  <div>
-                    <h1 class="font-bold text-lg">National Emergency</h1>
-                    <p class="text-gray-500">999</p>
-                  </div>
-                </div>
-                <div class="call-time text-right">
-                  <p class="text-gray-500">10:30 AM</p>
-                  <p class="text-gray-500">Jan 01, 2024</p>
-                </div>
+              <div class="flex items-center gap-2">
+                <img src="./assets/clock.gif" class="w-6 h-6" alt="" />
+                <h1 class="text-black font-bold text-2xl">Call History</h1>
               </div>
 
-              <div
-                class="single-call flex justify-between items-center border-b-2 border-gray-200 py-4"
+              <button
+                class="btn btn-sm w-[114px] h-[52px] bg-[#00A63E] rounded-3xl"
               >
-                <div class="call-info flex items-center gap-4">
-                  <div
-                    class="w-[50px] h-[50px] bg-[#DFEFFF] rounded-xl flex justify-center items-center"
-                  >
-                    <img src="./assets/police.png" class="w-6 h-6" alt="" />
-                  </div>
-                  <div>
-                    <h1 class="font-bold text-lg">Police Helpline</h1>
-                    <p class="text-gray-500">999</p>
-                  </div>
-                </div>
-                <div class="call-time text-right">
-                  <p class="text-gray-500">09:15 AM</p>
-                  <p class="text-gray-500">Jan 01, 2024</p>
-                </div>
-              </div>
-
-              
-                
-                  
-                  
+                <span></span
+                ><span class="font-semibold text-white text-xl">Clear</span>
+              </button>
+            </div>
+            <div class="call-history-list px-6 space-y-3 mt-4"></div>
           </section>
         </section>
       </section>
     </main>
+
+    <!--js script  -->
+    <script src="./script.js"></script>
   </body>
 </html>
